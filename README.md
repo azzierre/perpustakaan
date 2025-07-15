@@ -36,6 +36,8 @@ npm run dev
 🔑 Akun Dummy
 admin@gmail.com
 12345678
+member@gmail.com
+12345678
 
 📌 Teknologi
 Backend: Laravel 10
