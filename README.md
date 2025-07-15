@@ -1,35 +1,64 @@
-# vue-ujikel
+# Perpustakaan Digital
 
-This template should help get you started developing with Vue 3 in Vite.
+Aplikasi web sederhana untuk manajemen perpustakaan berbasis Vue.  
+Fitur utama:
+- Manajemen buku & penerbit
+- Manajemen anggota & kartu anggota
+- Peminjaman & pengembalian buku
+- Dashboard dengan daftar buku terbaru
 
-## Recommended IDE Setup
+---
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 🛠️ Instalasi
 
-## Customize configuration
+1. **Clone repository**
+   ```bash
+   git clone https://github.com/azzierre/perpustakaan.git
+   cd perpustakaan
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+2. nstall dependencies Laravel
+composer install
 
-## Project Setup
-
-```sh
+3.Install dependencies Frontend
 npm install
-```
 
-### Compile and Hot-Reload for Development
+4.buat file env nya
+cp .env.example .env
 
-```sh
+5.Generate key & migrate database
+php artisan key:generate
+php artisan migrate --seed
+
+6.Jalankan server
+ php artisan serve
 npm run dev
-```
 
-### Compile and Minify for Production
+🔑 Akun Dummy
+admin@gmail.com
+12345678
 
-```sh
-npm run build
-```
+📌 Teknologi
+Backend: Laravel 10
+Frontend: Vue 3 + Vite
+Database: MySQL
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+📜 Lisensi
 
-```sh
-npm run test:unit
-```
+---
+
+### 2. Commit & Push ke GitHub
+
+Sekarang jalankan perintah ini di terminal:
+
+```bash
+# Tambah file README.md
+git add README.md
+
+# Commit perubahan
+git commit -m "Add README.md with installation guide and dummy accounts"
+
+# Rename branch jadi main (kalau sebelumnya masih master)
+git branch -M main
+
+# Push ke GitHub
+git push -u origin main
